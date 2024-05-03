@@ -1,0 +1,61 @@
+@import url(https://fonts.google.com/specimen/PT+Serif?query=pt+serif);
+@import url(https://fonts.google.com/specimen/Roboto+Mono?query=Roboto+Mono);
+
+
+body{
+    font-family:var(---paragraph-font);
+    max-width:960px;
+    padding:20px,
+}
+
+:root{
+    --primary-color: #0A2E36;
+    --secondary-color: #199551;
+    --accent1-color: #14CC60;
+    --accent2-color: #09A129;
+
+    --heading-font:'______', PT Serif;
+    --paragraph-font: '_____',Roboto Mono;
+
+    --nav-background-color: #0A2E36;
+    --nav-link-color: #199551;
+    --nav-hover-link-color: #14CC60;
+    --nav-hover-background-color: #09A129;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--heading-font);
+    color:var(--primary-color);
+}
+
+header{
+    padding:20px;
+    background-color:var(var(--accent1-color));
+}
+
+p{
+    padding:25px;
+}
+
+nav{
+    background-color:var(--nav-background-color);
+    font-size:1.2rem;
+    display:flex;
+}
+
+nav a {
+    display:block;
+    color:var(--nav-hover-link-color);
+    text-decoration: none;
+    padding:1rem;
+}
+
+nav a:link, nav a:visited{
+    color:var(--nav-link-color);
+}
+
+nav a:hover{
+    color:var(--nav-hover-link-color);
+    background-color:var(--nav-background-color)
+}
+
